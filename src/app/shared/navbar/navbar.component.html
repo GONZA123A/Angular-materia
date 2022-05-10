@@ -1,3 +1,50 @@
+<p>
+  <mat-toolbar>
+    
+    <a class="brand-navbar" href="#"><img src="https://img.freepik.com/vector-gratis/ilustracion-almacenamiento-nube_53876-20605.jpg?w=1060&t=st=1650597714~exp=1650598314~hmac=6430805126f0a28077195d06f8173ad8037508de0218ba5e85c26140e663f0e1" alt="Responsive image" height="60px"></a>
+    <span>ProgramCorp</span>
+    <span class="example-spacer"></span>
+    <nav mat-tab-nav-bar>
+      <a mat-tab-link
+      *ngFor="let link of navLinks"
+      [routerLink]="link.link"
+      routerLinkActive #rla="routerLinkActive"
+      [active]="rla.isActive">
+      {{link.label}}
+      </a>
+      </nav>
+  </mat-toolbar>
+  <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+</p>
+
+
+<!--<p>
+  <mat-toolbar>
+    
+    <a class="brand-navbar" href="#"><img src="https://img.freepik.com/vector-gratis/ilustracion-almacenamiento-nube_53876-20605.jpg?w=1060&t=st=1650597714~exp=1650598314~hmac=6430805126f0a28077195d06f8173ad8037508de0218ba5e85c26140e663f0e1" alt="Responsive image" height="60px"></a>
+    <span>ProgramCorp</span>
+    <span class="example-spacer"></span>
+    <div class="div">
+      <a class="nav-link" routerLink="/inicio"><mat-icon>home</mat-icon> Inicio</a>
+    </div>
+    <div class="div">
+      <a class="nav-link" routerLink="/equipo"><mat-icon>group</mat-icon>Equipo</a>
+    </div>
+    <div class="div">
+      <a class="nav-link" routerLink="/contactos"><mat-icon>local_post_office</mat-icon>Contactos</a>
+    </div>
+    <div class="div">
+      <a class="nav-link" routerLink="/exitos"><mat-icon>public</mat-icon> Exitos</a>
+    </div>
+    <div class="div">
+      <a class="nav-link " routerLink="/servicio"><mat-icon>developer_mode</mat-icon>Servicios</a>
+    </div>
+    
+  </mat-toolbar>
+  <mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+</p>
+-->
+<!--
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -31,25 +78,4 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-
-<!--nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #666;">
-
-  <div class="container-fluid">
-
-    <img src="https://tecnobits.net/wp-content/uploads/2020/08/mejores-laptops-2020.jpg" alt="" width="100" height="50">
-      <h3 style="color: rgb(104, 169, 169);">Empresa de Programacion</h3>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <a class="nav-link"  routerLink="/inicio">Inicio</a>
-            <a class="nav-link"  routerLink="/equipo">Equipo</a>
-            <a class="nav-link"  routerLink="/contactos">Contactos</a>
-            <a class="nav-link"  routerLink="/exitos">Exitos</a>
-            <a class="nav-link "  routerLink="/servicio">Servicios</a>    
-          </ul>
-      </div>
-  </div>
-</nav-->
+-->

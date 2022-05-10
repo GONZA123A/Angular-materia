@@ -2,12 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from './card/card.component';
 import { MaterialModule } from '../material/material.module';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 
 @NgModule({
   declarations: [
-    CardComponent
+    CardComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,
