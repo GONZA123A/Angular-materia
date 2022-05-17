@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ComponentModule } from '../component/component.module';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -8,7 +9,8 @@ import { ComponentModule } from '../component/component.module';
   declarations: [],
   imports: [
     CommonModule,
-    ComponentModule
+    ComponentModule,
+    MaterialModule
   ]
 })
-export class PagesModule { }
+export class SharedModule { }
