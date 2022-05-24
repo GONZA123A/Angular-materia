@@ -30,7 +30,7 @@ export class NavbarComponent implements OnInit {
         index: 3
       },
       {
-        label: 'Equipo',
+        label: 'Servicio',
         link: './servicio',
         index: 4
       },
